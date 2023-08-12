@@ -1,11 +1,17 @@
 {
   "name": "expressjs-boilerplate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "main": "src/index.js",
+  "author": "Burak Cihan https://github.com/burakcihan61",
+  "license": "MIT",
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

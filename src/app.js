@@ -10,7 +10,6 @@ const routes = require('./routes');
 
 const app = express();
 
-
 // set security HTTP headers
 app.use(helmet());
 
@@ -22,6 +21,9 @@ app.use(morgan('dev'));
 
 // parse cookies
 app.use(cookieParser());
+
+// Static files
+app.use(express.static('public'));
 
 // parse urlencoded request body
 app.use(express.urlencoded({ extended: true }));
@@ -37,17 +39,8 @@ app.use(compression());
 app.use(cors());
 app.options('*', cors());
 
-
-
 // v1 api routes
 app.use('/v1', routes);
-
-app.get('/', (req, res) => {
-  res.json({
-    message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
-  });
-});
-
 
 
 module.exports = app;

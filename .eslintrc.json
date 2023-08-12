@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": ["plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "func-names": "off",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off"
+  }
+}
