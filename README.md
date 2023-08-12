@@ -2,6 +2,11 @@
 
 A boilerplate/starter project for quickly building RESTful APIs using Node.js, Express, and Mongoose.
 
+## Live Project
+[Railway](https://expressjs-boilerplate-production.up.railway.app/)
+
+[Vercel](https://expressjs-boilerplate.vercel.app/)
+
 ## Manual Installation
 
 If you would still prefer to do the installation manually, follow these steps:
