@@ -63,11 +63,6 @@ app.use((err, req, res, next) => {
   return next(err);
 });
 
-// catch 404 and forward to error handler
-app.use((req, res, next) => {
-  const err = new APIError('API not found', httpStatus.NOT_FOUND);
-  return next(err);
-});
 
 // log error in winston transports except when executing test suite
 if (config.env !== 'test') {

@@ -12,10 +12,9 @@ const envVarsSchema = Joi.object()
     // MONGO_PORT: Joi.number(),
     // JWT_SECRET: Joi.string().required(),
     // MONGO_HOST: Joi.string().required()
-
-
   })
-  .unknown().required();
+  .unknown()
+  .required();
 
 const { value: envVars, error } = envVarsSchema.prefs({ errors: { label: 'key' } }).validate(process.env);
 
