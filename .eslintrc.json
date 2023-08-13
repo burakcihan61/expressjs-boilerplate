@@ -1,16 +1,14 @@
 {
-  "env": {
-    "node": true,
-    "jest": true
-  },
-  "extends": ["plugin:prettier/recommended"],
-  "plugins": ["prettier"],
-  "parserOptions": {
-    "ecmaVersion": 2018
-  },
-  "rules": {
-    "func-names": "off",
-    "no-underscore-dangle": "off",
-    "consistent-return": "off"
-  }
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": ["eslint:recommended","plugin:prettier/recommended"],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "no-console": "warn"
+    }
 }
