@@ -11,7 +11,8 @@
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check **/*.js",
-    "prettier:fix": "prettier --write **/*.js"
+    "prettier:fix": "prettier --write **/*.js",
+    "format": "eslint lint --fix && prettier --write **/*.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

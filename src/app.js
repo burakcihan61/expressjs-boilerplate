@@ -63,7 +63,6 @@ app.use((err, req, res, next) => {
   return next(err);
 });
 
-
 // log error in winston transports except when executing test suite
 if (config.env !== 'test') {
   app.use(
